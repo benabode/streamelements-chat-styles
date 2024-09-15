@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+
+.badge{width::16px;}
+.twitch-chat{
+  background:rgba(0, 0, 0, 0.55);
+  padding:32px;
+}
+
+.chat-line:before{
+  content:"";
+  width:20px;
+  height:20px;
+  filter:saturate(0);
+  position:absolute;
+  right:0;
+  z-index:1;
+  transform:translateY(-5px) translateX(0px);
+  
+}
+
+.chat-line{
+  padding:4px;
+  margin-bottom:8px;
+  border:2px solid black;
+  outline: #cdcdcd solid 2px;
+  background:#cdcdcd;
+  font-family: 'Silkscreen', cursive;
+}
+
+.chat-line:after{
+  content:"";
+  position:relative;
+  left:8px;
+  background:black;
+  border:1px solid black;
+  animation: blinkLine 0.8s forwards;
+  animation-iteration-count:infinite;
+}
+
+.colon{
+  color:black !important;
+}
+
+.username{
+  color:black !important;
+  text-decoration:underline;
+}
+
+.badge, .emote{
+  filter:saturate(0);
+}
+
+@keyframes blinkLine{
+  0%{border:1px solid black;}
+  50%{border:0px solid black; opacity:0;}
+  100%{border:1px solid black;}
+}
+
