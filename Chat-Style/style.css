@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
+
+:root{
+  --gamepad:"🎮";
+  --fire:"🔥";
+}
+
+
+.colon{
+  display:none;
+}
+
+
+.twitch-chat{
+
+  padding:0px  20px 20px 20px;
+
+}
+
+
+.chat-line{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto;
+  padding:5px;
+}
+
+
+
+.username{
+  font-family: 'Arial', cursive;
+  font-weight:bold;
+  font-size:11px;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  padding:5px 5px 5px 5px;
+  position:relative;
+  top:10px;
+  transform:rotate(-2deg);
+  max-width:148px;
+  background-color:#e91916;
+  color:white !important;
+
+}
+
+.badges{
+  padding:5px;
+  max-width:90px;
+  position:relative;
+  top:20px;
+  justify-self: end;
+  background-color:#e91916;
+}
+
+.badge {
+  max-width:15px;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  grid-auto-columns: auto;
+  
+}
+
+.badges::before{
+  content:var(--gamepad);
+  margin-right:10px;
+  overlay:hidden;
+}
+
+.message{
+  grid-row:2;
+  grid-column:1/3;
+  color:black;
+  padding:25px 20px 10px 10px;
+  border:1px solid #e91916;
+  background: rgba(51,52,57,0.5);
+  animation-name: borderColourMix;
+
+}

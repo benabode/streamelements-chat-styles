@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
 
 
-.badge{width::16px;}
+.badge{width:16px;}
 .twitch-chat{
   background:rgba(0, 0, 0, 0.55);
   padding:32px;
